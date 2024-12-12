@@ -111,3 +111,4 @@ img.alignright {
 
 footer.wp-block-template-part{margin-block-start: 0;}
 .site-content{min-height:400px}
+.site-header{position: relative;z-index: 100000;}

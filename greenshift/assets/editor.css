@@ -125,18 +125,6 @@
 
 /* Buttons
 --------------------------------------------- */
-.wp-block-button.is-style-sliding-button .wp-block-button__link {
-	background: var(--wp--preset--gradient--creative-btn);
-	color: var(--wp--preset--color--textonprimary);
-	background-size: 200% 200%;
-}
-
-.wp-block-button.is-style-sliding-button .wp-block-button__link:focus,
-.wp-block-button.is-style-sliding-button .wp-block-button__link:hover {
-	background-position: 100% 0;
-	background: var(--wp--preset--gradient--creative-btn);
-	color: var(--wp--preset--color--textonprimary);
-}
 
 .wp-block-button.is-style-secondary-button .wp-block-button__link {
 	background: var(--wp--preset--color--button);

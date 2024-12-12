@@ -9,7 +9,7 @@
  */
 
 if ( !defined( 'GREENSHIFT_THEME_VERSION' ) ) {
-	define('GREENSHIFT_THEME_VERSION', '2.3.4');
+	define('GREENSHIFT_THEME_VERSION', '2.3.6');
 }
 if ( !defined( 'GREENSHIFT_THEME_DIR' ) ) {
 	define('GREENSHIFT_THEME_DIR', get_template_directory_uri());
@@ -230,3 +230,32 @@ add_filter( 'block_editor_settings_all', function( $settings ) {
 });
 
 require_once dirname( __FILE__ ) . '/inc/admin_menu/index.php';
+
+function greenshift_display_performance_statistics() {
+    global $wpdb;
+
+    // Get memory usage
+    $memory_usage = size_format(memory_get_usage());
+
+    // Get peak memory usage
+    $peak_memory_usage = size_format(memory_get_peak_usage());
+
+    // Get number of database queries
+    $db_queries = get_num_queries();
+
+    // Get page load time
+    $load_time = timer_stop();
+
+    // Build the output
+    $output = "<div class='performance-stats'>";
+    $output .= "<p><strong>Database Queries:</strong> $db_queries</p>";
+    $output .= "<p><strong>Memory Usage:</strong> $memory_usage</p>";
+    $output .= "<p><strong>Peak Memory Usage:</strong> $peak_memory_usage</p>";
+    $output .= "<p><strong>Page Load Time:</strong> {$load_time} seconds</p>";
+    $output .= "</div>";
+
+    echo $output;
+}
+
+// Hook to display stats at the bottom of the page
+//add_action('wp_footer', 'greenshift_display_performance_statistics');

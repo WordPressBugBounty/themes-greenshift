@@ -23,6 +23,7 @@ register_block_style(
 	array(
 		'name'  => 'sliding-button',
 		'label' => __('Sliding Gradient', 'greenshift'),
+        'inline_style' => '.wp-block-button.is-style-sliding-button .wp-block-button__link {background: var(--wp--preset--gradient--creative-btn);color: var(--wp--preset--color--textonprimary);background-size: 200% 200%;}.wp-block-button.is-style-sliding-button .wp-block-button__link:focus,.wp-block-button.is-style-sliding-button .wp-block-button__link:hover {background-position: 100% 0;background: var(--wp--preset--gradient--creative-btn);color: var(--wp--preset--color--textonprimary);}',
 	)
 );
 register_block_style(
@@ -339,11 +340,7 @@ function greenshift_theme_conditional_assets($html, $block)
             $blockname = $block['blockName'];
 			if (!empty($block['attrs']['className'])) {
 				if ($blockname == 'core/button') {
-					if (str_contains($block['attrs']['className'], 'is-style-sliding-button') !== false) {
-						$block_style .= '.wp-block-button.is-style-sliding-button .wp-block-button__link {background: var(--wp--preset--gradient--creative-btn);color: var(--wp--preset--color--textonprimary);background-size: 200% 200%;}
-						.wp-block-button.is-style-sliding-button .wp-block-button__link:focus,.wp-block-button.is-style-sliding-button .wp-block-button__link:hover {    background-position: 100% 0;background: var(--wp--preset--gradient--creative-btn);color: var(--wp--preset--color--textonprimary);}';
-					}
-                    else if (str_contains($block['attrs']['className'], 'is-style-secondary-button') !== false) {
+                    if (str_contains($block['attrs']['className'], 'is-style-secondary-button') !== false) {
 						$block_style .= '.wp-block-button.is-style-secondary-button .wp-block-button__link {background: var(--wp--preset--color--button);color: var(--wp--preset--color--textonbutton);}
 						.wp-block-button.is-style-secondary-button .wp-block-button__link:focus,.wp-block-button.is-style-secondary-button .wp-block-button__link:hover {    background: var(--wp--preset--color--textonbutton);color: var(--wp--preset--color--button);}';
 					}
@@ -517,7 +514,7 @@ function greenshift_theme_conditional_assets($html, $block)
 					}
                     if ($blockname == 'core/group' && !empty($block['attrs']['gsStickyHeader'])) {
                         wp_enqueue_script('greenshift-stickyheader');
-                        $block_style .= '.gs-sticky-enable{transition:all .5s var(--greenshift-transition), z-index 0s;position:sticky;top:0;z-index:100000}.gs-sticky-header{transition:all .5s var(--greenshift-transition)}.gs-sticky-enable .gs-sticky-header{transition-delay:.1s}';
+                        $block_style .= '.site-header.gs-sticky-enable, .gs-sticky-enable{transition:all .5s var(--greenshift-transition), z-index 0s;position:sticky;top:0;z-index:100000}.gs-sticky-header{transition:all .5s var(--greenshift-transition)}.gs-sticky-enable .gs-sticky-header{transition-delay:.1s}';
                         if(empty($block['attrs']['gsStickyHeaderShadow'])) {
                             $block_style .= '.gs-sticky-enable .gs-sticky-header{box-shadow:0 10px 20px rgba(44,62,80,.05);}';
                         }
