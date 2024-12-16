@@ -606,11 +606,11 @@ function greenshift_theme_conditional_assets($html, $block)
                 if ($blockname == 'core/navigation') {
                     if ( !empty($block['attrs']['gsReusableMobileTopId']) ) {
                         $mobtop = do_shortcode('[wp_reusable_render id='.$block['attrs']['gsReusableMobileTopId'].']');
-                        $html = str_replace('<ul class="wp-block-navigation__container', '<div class="gs-mobile-top-template" style="display:none;width:100%">'.$mobtop.'</div><ul class="wp-block-navigation__container', $html );
+                        $html = preg_replace('/<ul /', '<div class="gs-mobile-top-template" style="display:none;width:100%">'.$mobtop.'</div><ul ', $html, 1);
                     }
                     if ( !empty($block['attrs']['gsReusableMobileBottomId']) ) {
                         $mobbottom = do_shortcode('[wp_reusable_render id='.$block['attrs']['gsReusableMobileBottomId'].']');
-                        $html = str_replace('<ul class="wp-block-navigation__container', '<div class="gs-mobile-bottom-template" style="display:none;width:100%; order:3">'.$mobbottom.'</div><ul class="wp-block-navigation__container', $html );
+                        $html = preg_replace('/<ul /', '<div class="gs-mobile-bottom-template" style="display:none;width:100%; order:3">'.$mobbottom.'</div><ul ', $html, 1);
                     }
                     
                     if ( !empty($block['attrs']['gsId']) && (!empty($block['attrs']['gsPaddingV']) || !empty($block['attrs']['gsPaddingB']) || !empty($block['attrs']['gsSubMenuHoverColor']) || !empty($block['attrs']['gsMenuHoverColor']) || !empty($block['attrs']['gsMenuHoverBg']) || !empty($block['attrs']['gsSubMenuHoverBg']) || !empty($block['attrs']['gsMenuHoverDisableLine']) || !empty($block['attrs']['gsMenuMobileBg']) || !empty($block['attrs']['gsMenuMobileColor']) || !empty($block['attrs']['gsMenuMobileArrowBg']) || !empty($block['attrs']['gsMenuMobileArrowColor']) )) {
