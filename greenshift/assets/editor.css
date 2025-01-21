@@ -1373,7 +1373,7 @@ table.wc-block-mini-cart-items tbody td {
 }
 
 .wp-block-woocommerce-checkout-order-summary-block {
-	padding: 25px;
+	padding: 20px;
 	border: 2px solid var(--wp--preset--color--lightborder);
 	background: #00000003
 }
@@ -1405,10 +1405,7 @@ table.wc-block-mini-cart-items tbody td {
 .wp-block-woocommerce-checkout-order-summary-cart-items-block:after {
 	border: none;
 }
-
-.wc-block-checkout__sidebar .wc-block-components-product-name {
-	font-weight: 600
-}
+.wc-blocks-components-select .wc-blocks-components-select__select{border-color: var(--wp--preset--color--lightborder)}.wc-block-components-checkout-step__description{opacity:0.6}
 
 .wc-block-components-totals-wrapper:after,
 .wc-block-components-form .wc-block-components-text-input input[type=email],

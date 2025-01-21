@@ -13,7 +13,7 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     4.3.0
+ * @version     9.6.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -35,8 +35,12 @@ if ( ! comments_open() || !function_exists('wc_review_ratings_enabled')) {
 	<div class="gspb-rating-comments">
 		<h2 class="gs-heading-icon woocommerce-Reviews-title"><?php
 			$count = $product->get_review_count();
-			if ($count && wc_review_ratings_enabled())
-				printf( _n( '%1$s review for %2$s%3$s%4$s', '%1$s reviews for %2$s%3$s%4$s', $count, 'greenshift' ), $count, '<span style="font-weight:var(--wp--custom--font-weight--normal)">', get_the_title(), '</span>' );
+			if ($count && wc_review_ratings_enabled()){
+				/* translators: 1: reviews count 2: product name */
+				$reviews_title = sprintf( esc_html( _n( '%1$s review for %2$s', '%1$s reviews for %2$s', $count, 'greenshift' ) ), esc_html( $count ), '<span>' . get_the_title() . '</span>' );
+				echo apply_filters( 'woocommerce_reviews_title', $reviews_title, $count, $product ); // WPCS: XSS ok.
+
+			}
 			else
 				esc_html_e( 'User Reviews', 'greenshift' );
 		?>
@@ -106,15 +110,22 @@ if ( ! comments_open() || !function_exists('wc_review_ratings_enabled')) {
 					<ol class="commentlist">
 						<?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>
 					</ol>
-					<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
+					<?php
+					if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 						echo '<nav class="woocommerce-pagination">';
-						paginate_comments_links( apply_filters( 'woocommerce_comment_pagination_args', array(
-							'prev_text' => '&larr;',
-							'next_text' => '&rarr;',
-							'type'      => 'list',
-						) ) );
+						paginate_comments_links(
+							apply_filters(
+								'woocommerce_comment_pagination_args',
+								array(
+									'prev_text' => is_rtl() ? '&rarr;' : '&larr;',
+									'next_text' => is_rtl() ? '&larr;' : '&rarr;',
+									'type'      => 'list',
+								)
+							)
+						);
 						echo '</nav>';
-					endif; ?>				
+					endif;
+					?>			
 				</div>
 				<ol id="loadcomment-list" class="commentlist"></ol>
 

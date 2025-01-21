@@ -279,7 +279,7 @@ if (
 
 
                     <div class="gspb_main_buttonss">
-                        <div id="gspb_template_import_btnss" data-type="single" data-id="<?php echo (int)$singlePageId; ?>" data-tab="Templates"></div>
+                        <div id="gspb_template_import_btnss" data-type="single" data-id="<?php echo (int)$singlePageId; ?>" data-tab="Templates" data-key-default="129"></div>
                     </div>
 
                 </div>

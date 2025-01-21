@@ -25,7 +25,7 @@
 	"customTemplates": [
 		{
 			"name": "blank",
-			"title": "Blank",
+			"title": "Blank Canvas",
 			"postTypes": [
 				"page",
 				"post"
@@ -37,6 +37,41 @@
 			"postTypes": [
 				"page",
 				"post"
+			]
+		},
+		{
+			"name": "single-product",
+			"title": "Single Product",
+			"postTypes": [
+				"product"
+			]
+		},
+		{
+			"name": "page-checkout",
+			"title": "Checkout",
+			"postTypes": [
+				"product"
+			]
+		},
+		{
+			"name": "page-cart",
+			"title": "Cart",
+			"postTypes": [
+				"product"
+			]
+		},
+		{
+			"name": "archive-product",
+			"title": "Archive Product",
+			"postTypes": [
+				"product"
+			]
+		},
+		{
+			"name": "product-search-results",
+			"title": "Product Search Results",
+			"postTypes": [
+				"product"
 			]
 		}
 	],
@@ -250,17 +285,17 @@
 					"size": "11px"
 				},
 				{
-					"name": "Static - Extra Small (Tags)",
+					"name": "Static - Extra Small",
 					"slug": "xsmall",
 					"size": "0.85rem"
 				},
 				{
-					"name": "Static - Small (Menu)",
+					"name": "Static - Small",
 					"slug": "small",
 					"size": "1rem"
 				},
 				{
-					"name": "Static - Medium (Content)",
+					"name": "Static - Medium",
 					"slug": "medium",
 					"size": "1.2rem"
 				},
@@ -270,17 +305,17 @@
 					"size": "1.3rem"
 				},
 				{
-					"name": "Static - Big (H3 heading)",
+					"name": "Static - Big",
 					"slug": "big",
 					"size": "1.45rem"
 				},
 				{
-					"name": "Fluid Large (H2 heading)",
+					"name": "Fluid Large",
 					"slug": "large",
 					"size": "clamp(1.4rem, 2.45vw, 1.75rem)"
 				},
 				{
-					"name": "Fluid xLarge (H1 heading)",
+					"name": "Fluid xLarge",
 					"slug": "x-large",
 					"size": "clamp(1.75rem, 3vw, 2.2rem)"
 				},

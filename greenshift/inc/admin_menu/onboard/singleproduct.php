@@ -248,7 +248,7 @@ if (
                         </svg></div>
                     <div class="gs-box-text">
                         <?php esc_html_e("Selecting single product template will overwrite your existing template. You can edit elements in", "greenshift"); ?>
-                        <a href="<?php echo admin_url('site-editor.php?postType=wp_template&postId=woocommerce%2Fwoocommerce%2F%2Fsingle-product&canvas=edit'); ?>" target="_blank"><?php esc_html_e("Site Editor", "greenshift"); ?></a>
+                        <a href="<?php echo admin_url('site-editor.php?postType=wp_template&postId=greenshift%2F%2Fsingle-product&canvas=edit'); ?>" target="_blank"><?php esc_html_e("Site Editor", "greenshift"); ?></a>
                     </div>
                 </div>
                 <?php if (!defined('GREENSHIFTWOO_DIR_URL') || !defined('GREENSHIFTQUERY_DIR_URL')) : ?>
