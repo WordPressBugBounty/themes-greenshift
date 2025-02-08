@@ -40,8 +40,11 @@ if (!function_exists('greenshift_woo_enqueue')){
     function greenshift_woo_enqueue() {   
 
         wp_enqueue_style( 'woocommerce-general');
-        wp_enqueue_style( 'greenshift-quantity');
-        wp_enqueue_script( 'greenshift-quantity');
+		$themesettings = get_option('greenshift_theme_options');
+		if(empty($themesettings['disableQuantity'])){
+			wp_enqueue_style( 'greenshift-quantity');
+			wp_enqueue_script( 'greenshift-quantity');
+		}
 
 		if(is_singular('product')){
 			wp_enqueue_style('greenshift-woo-single');
