@@ -105,7 +105,7 @@ msgstr ""
 
 #: inc/admin_menu/onboard/archive.php:337
 #: inc/admin_menu/onboard/archiveproduct.php:316
-#: inc/admin_menu/onboard/brand.php:389 inc/admin_menu/onboard/footer.php:330
+#: inc/admin_menu/onboard/brand.php:197 inc/admin_menu/onboard/footer.php:330
 #: inc/admin_menu/onboard/header.php:351 inc/admin_menu/onboard/home.php:312
 #: inc/admin_menu/onboard/pages.php:462
 #: inc/admin_menu/onboard/searchproduct.php:313
@@ -116,7 +116,7 @@ msgstr ""
 
 #: inc/admin_menu/onboard/archive.php:340
 #: inc/admin_menu/onboard/archiveproduct.php:319
-#: inc/admin_menu/onboard/brand.php:390 inc/admin_menu/onboard/footer.php:333
+#: inc/admin_menu/onboard/brand.php:198 inc/admin_menu/onboard/footer.php:333
 #: inc/admin_menu/onboard/header.php:352 inc/admin_menu/onboard/home.php:315
 #: inc/admin_menu/onboard/pages.php:465
 #: inc/admin_menu/onboard/searchproduct.php:316
@@ -160,63 +160,31 @@ msgstr ""
 msgid "Improved Shop page"
 msgstr ""
 
-#: inc/admin_menu/onboard/brand.php:184
+#: inc/admin_menu/onboard/brand.php:71
 msgid "You can add unlimited extra colors and configure additional global elements in"
 msgstr ""
 
-#: inc/admin_menu/onboard/brand.php:197
-msgid "Brand Main Colors"
-msgstr ""
-
-#: inc/admin_menu/onboard/brand.php:206
-msgid "Primary color"
-msgstr ""
-
-#: inc/admin_menu/onboard/brand.php:214
-msgid "Secondary color"
-msgstr ""
-
-#: inc/admin_menu/onboard/brand.php:222
-msgid "Text on Primary"
-msgstr ""
-
-#: inc/admin_menu/onboard/brand.php:230
-msgid "Secondary Button color"
-msgstr ""
-
-#: inc/admin_menu/onboard/brand.php:238
-msgid "Text on Secondary Button"
-msgstr ""
-
-#: inc/admin_menu/onboard/brand.php:246
-msgid "Accent color"
-msgstr ""
-
-#: inc/admin_menu/onboard/brand.php:256
-msgid "Extra Greenshift Colors for patterns"
-msgstr ""
-
-#: inc/admin_menu/onboard/brand.php:279
+#: inc/admin_menu/onboard/brand.php:87
 msgid "Site Title"
 msgstr ""
 
-#: inc/admin_menu/onboard/brand.php:283
+#: inc/admin_menu/onboard/brand.php:91
 msgid "Add name for site"
 msgstr ""
 
-#: inc/admin_menu/onboard/brand.php:289
+#: inc/admin_menu/onboard/brand.php:97
 msgid "Site Description"
 msgstr ""
 
-#: inc/admin_menu/onboard/brand.php:293
+#: inc/admin_menu/onboard/brand.php:101
 msgid "Add description for site"
 msgstr ""
 
-#: inc/admin_menu/onboard/brand.php:299
+#: inc/admin_menu/onboard/brand.php:107
 msgid "Site Logo"
 msgstr ""
 
-#: inc/admin_menu/onboard/brand.php:345
+#: inc/admin_menu/onboard/brand.php:153
 msgid "Site Icon"
 msgstr ""
 
@@ -435,51 +403,51 @@ msgid "Install Core Greenshift plugin"
 msgstr ""
 
 #: inc/admin_menu/settings.php:75 inc/admin_menu/settings.php:76
-#: inc/admin_menu/settings.php:218
+#: inc/admin_menu/settings.php:219
 msgid "Theme Settings"
 msgstr ""
 
-#: inc/admin_menu/settings.php:224
+#: inc/admin_menu/settings.php:225
 msgid "Brand Settings"
 msgstr ""
 
-#: inc/admin_menu/settings.php:228
+#: inc/admin_menu/settings.php:229
 msgid "Homepage Settings"
 msgstr ""
 
-#: inc/admin_menu/settings.php:232
+#: inc/admin_menu/settings.php:233
 msgid "Header pattern"
 msgstr ""
 
-#: inc/admin_menu/settings.php:236
+#: inc/admin_menu/settings.php:237
 msgid "Footer pattern"
 msgstr ""
 
-#: inc/admin_menu/settings.php:240
+#: inc/admin_menu/settings.php:241
 msgid "Create Extra pages"
 msgstr ""
 
-#: inc/admin_menu/settings.php:244
+#: inc/admin_menu/settings.php:245
 msgid "Extra Template Settings"
 msgstr ""
 
-#: inc/admin_menu/settings.php:248
+#: inc/admin_menu/settings.php:249
 msgid "Single post template"
 msgstr ""
 
-#: inc/admin_menu/settings.php:252
+#: inc/admin_menu/settings.php:253
 msgid "Post Archive template"
 msgstr ""
 
-#: inc/admin_menu/settings.php:258
+#: inc/admin_menu/settings.php:259
 msgid "Single Product template"
 msgstr ""
 
-#: inc/admin_menu/settings.php:262
+#: inc/admin_menu/settings.php:263
 msgid "Shop archive template"
 msgstr ""
 
-#: inc/admin_menu/settings.php:266
+#: inc/admin_menu/settings.php:267
 msgid "Search Product template"
 msgstr ""
 
@@ -543,165 +511,165 @@ msgstr ""
 msgid "Sliding Gradient"
 msgstr ""
 
-#: inc/block-styles.php:32
+#: inc/block-styles.php:33
 msgid "Secondary button"
 msgstr ""
 
-#: inc/block-styles.php:39
+#: inc/block-styles.php:41
 msgid "3d Button light"
 msgstr ""
 
-#: inc/block-styles.php:46
+#: inc/block-styles.php:49
 msgid "3d Button dark"
 msgstr ""
 
-#: inc/block-styles.php:54
+#: inc/block-styles.php:58
 msgid "System light"
 msgstr ""
 
-#: inc/block-styles.php:61
+#: inc/block-styles.php:66
 msgid "System dark"
 msgstr ""
 
-#: inc/block-styles.php:69
+#: inc/block-styles.php:75
 msgid "Unstyled view"
 msgstr ""
 
-#: inc/block-styles.php:76
+#: inc/block-styles.php:82
 msgid "Full background"
 msgstr ""
 
-#: inc/block-styles.php:83
+#: inc/block-styles.php:89
 msgid "Blur background"
 msgstr ""
 
-#: inc/block-styles.php:93
+#: inc/block-styles.php:99
 msgid "Accent Button"
 msgstr ""
 
-#: inc/block-styles.php:100
+#: inc/block-styles.php:106
 msgid "Primary Color Button"
 msgstr ""
 
-#: inc/block-styles.php:107
+#: inc/block-styles.php:113
 msgid "Secondary Color Button"
 msgstr ""
 
-#: inc/block-styles.php:114
+#: inc/block-styles.php:120
 msgid "Primary 3d Button"
 msgstr ""
 
-#: inc/block-styles.php:122 inc/block-styles.php:138
+#: inc/block-styles.php:128 inc/block-styles.php:144
 msgid "No Margin"
 msgstr ""
 
-#: inc/block-styles.php:129
+#: inc/block-styles.php:135
 msgid "Shadow on hover"
 msgstr ""
 
-#: inc/block-styles.php:145
+#: inc/block-styles.php:151
 msgid "Half negative offset"
 msgstr ""
 
-#: inc/block-styles.php:152
+#: inc/block-styles.php:158
 msgid "Shadow radius"
 msgstr ""
 
-#: inc/block-styles.php:161 inc/block-styles.php:169
+#: inc/block-styles.php:167 inc/block-styles.php:175
 msgid "Gradient mask"
 msgstr ""
 
-#: inc/block-styles.php:179
+#: inc/block-styles.php:185
 msgid "Colored tags"
 msgstr ""
 
-#: inc/block-styles.php:186
+#: inc/block-styles.php:192
 msgid "Rounded border"
 msgstr ""
 
-#: inc/block-styles.php:193
+#: inc/block-styles.php:199
 msgid "Rounded grey"
 msgstr ""
 
-#: inc/block-styles.php:200
+#: inc/block-styles.php:206
 msgid "Underline on hover"
 msgstr ""
 
-#: inc/block-styles.php:207 inc/block-styles.php:214
+#: inc/block-styles.php:213 inc/block-styles.php:220
 msgid "Inline List"
 msgstr ""
 
-#: inc/block-styles.php:222
+#: inc/block-styles.php:228
 msgid "Floating search bar on click"
 msgstr ""
 
-#: inc/block-styles.php:230
+#: inc/block-styles.php:236
 msgid "Header search"
 msgstr ""
 
-#: inc/block-styles.php:236
+#: inc/block-styles.php:242
 msgid "Creative overlay"
 msgstr ""
 
-#: inc/block-styles.php:240
+#: inc/block-styles.php:246
 msgid "Rounded border box"
 msgstr ""
 
-#: inc/block-styles.php:248 inc/block-styles.php:262
+#: inc/block-styles.php:254 inc/block-styles.php:268
 msgid "Show two lines"
 msgstr ""
 
-#: inc/block-styles.php:255 inc/block-styles.php:269
+#: inc/block-styles.php:261 inc/block-styles.php:275
 msgid "Show three lines"
 msgstr ""
 
-#: inc/block-styles.php:276
+#: inc/block-styles.php:282
 msgid "Mega columned menu"
 msgstr ""
 
-#: inc/block-styles.php:283
+#: inc/block-styles.php:289
 msgid "Mega menu Open on left"
 msgstr ""
 
-#: inc/block-styles.php:290
+#: inc/block-styles.php:296
 msgid "Theme search style"
 msgstr ""
 
-#: inc/block-styles.php:297
+#: inc/block-styles.php:303
 msgid "Theme search with round corners"
 msgstr ""
 
-#: inc/block-styles.php:304 inc/block-styles.php:311 inc/block-styles.php:318
+#: inc/block-styles.php:310 inc/block-styles.php:317 inc/block-styles.php:324
 msgid "Hide on mobile and tablets"
 msgstr ""
 
-#: inc/block-styles.php:326
+#: inc/block-styles.php:332
 msgid "Soft Border radius"
 msgstr ""
 
-#: inc/woocommerce/functions.php:158
+#: inc/woocommerce/functions.php:161
 msgid "PROS:"
 msgstr ""
 
-#: inc/woocommerce/functions.php:158
+#: inc/woocommerce/functions.php:161
 msgid "CONS:"
 msgstr ""
 
-#: inc/woocommerce/functions.php:199 inc/woocommerce/functions.php:234
-#: inc/woocommerce/functions.php:284
+#: inc/woocommerce/functions.php:202 inc/woocommerce/functions.php:237
+#: inc/woocommerce/functions.php:287
 msgid "+ PROS:"
 msgstr ""
 
-#: inc/woocommerce/functions.php:207 inc/woocommerce/functions.php:238
-#: inc/woocommerce/functions.php:287
+#: inc/woocommerce/functions.php:210 inc/woocommerce/functions.php:241
+#: inc/woocommerce/functions.php:290
 msgid "- CONS:"
 msgstr ""
 
-#: inc/woocommerce/functions.php:220
+#: inc/woocommerce/functions.php:223
 msgid "Pros and Cons"
 msgstr ""
 
-#: inc/woocommerce/functions.php:272
+#: inc/woocommerce/functions.php:275
 msgid "Product Review"
 msgstr ""
 
@@ -741,101 +709,101 @@ msgstr ""
 msgid "No results matching your criteria"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:39
+#: woocommerce/single-product-reviews.php:40
 #, php-format
-msgid "%1$s review for %2$s%3$s%4$s"
-msgid_plural "%1$s reviews for %2$s%3$s%4$s"
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: woocommerce/single-product-reviews.php:41
+#: woocommerce/single-product-reviews.php:45
 msgid "User Reviews"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:48
+#: woocommerce/single-product-reviews.php:52
 msgid "out of"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:52
+#: woocommerce/single-product-reviews.php:56
 #, php-format
 msgid "Rated %s out of"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:64
+#: woocommerce/single-product-reviews.php:68
 #, php-format
 msgid "Rated %s out of 5"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:98
+#: woocommerce/single-product-reviews.php:102
 msgid "Write a review"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:123
+#: woocommerce/single-product-reviews.php:134
 msgid "There are no reviews yet."
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:138
+#: woocommerce/single-product-reviews.php:149
 msgid "Add a review"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:138
+#: woocommerce/single-product-reviews.php:149
 #, php-format
 msgid "Be the first to review &ldquo;%s&rdquo;"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:139
+#: woocommerce/single-product-reviews.php:150
 msgid "Leave a Reply"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:142
+#: woocommerce/single-product-reviews.php:153
 msgid "Name"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:144
+#: woocommerce/single-product-reviews.php:155
 msgid "Email"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:147
+#: woocommerce/single-product-reviews.php:158
 msgid "Submit"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:153
+#: woocommerce/single-product-reviews.php:164
 #, php-format
 msgid "You must be %1$s%2$s%3$s logged in %4$s to post a review."
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:169
+#: woocommerce/single-product-reviews.php:180
 msgid "Your Rating"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:170
+#: woocommerce/single-product-reviews.php:181
 msgid "Rate&hellip;"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:171
+#: woocommerce/single-product-reviews.php:182
 msgid "Perfect"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:172
+#: woocommerce/single-product-reviews.php:183
 msgid "Good"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:173
+#: woocommerce/single-product-reviews.php:184
 msgid "Average"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:174
+#: woocommerce/single-product-reviews.php:185
 msgid "Not that bad"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:175
+#: woocommerce/single-product-reviews.php:186
 msgid "Very Poor"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:181
+#: woocommerce/single-product-reviews.php:192
 msgid "Your Review"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:188
+#: woocommerce/single-product-reviews.php:199
 msgid "Only logged in customers who have purchased this product may leave a review."
 msgstr ""

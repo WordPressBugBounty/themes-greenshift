@@ -9,7 +9,7 @@
  */
 
 if ( !defined( 'GREENSHIFT_THEME_VERSION' ) ) {
-	define('GREENSHIFT_THEME_VERSION', '2.6.1');
+	define('GREENSHIFT_THEME_VERSION', '2.6.2');
 }
 if ( !defined( 'GREENSHIFT_THEME_DIR' ) ) {
 	define('GREENSHIFT_THEME_DIR', get_template_directory_uri());

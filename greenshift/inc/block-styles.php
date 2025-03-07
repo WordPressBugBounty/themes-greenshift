@@ -31,6 +31,7 @@ register_block_style(
 	array(
 		'name'  => 'secondary-button',
 		'label' => __('Secondary button', 'greenshift'),
+        'inline_style' => '.wp-block-button.is-style-secondary-button .wp-block-button__link {background: var(--wp--preset--color--button);color: var(--wp--preset--color--textonbutton);}.wp-block-button.is-style-secondary-button .wp-block-button__link:focus,.wp-block-button.is-style-secondary-button .wp-block-button__link:hover {background: var(--wp--preset--color--textonbutton);color: var(--wp--preset--color--button);}',
 	)
 );
 register_block_style(
@@ -38,6 +39,7 @@ register_block_style(
 	array(
 		'name'  => 'cubebtnwhite',
 		'label' => __('3d Button light', 'greenshift'),
+        'inline_style' => '.is-style-cubebtnwhite .wp-block-button__link{border:none !important; box-shadow: 0px 2px 4px rgb(45 35 66 / 10%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7}.is-style-cubebtnwhite .wp-block-button__link:hover{transform: translateY(-2px);}.is-style-cubebtnwhite .wp-block-button__link:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}',
 	)
 );
 register_block_style(
@@ -45,6 +47,7 @@ register_block_style(
 	array(
 		'name'  => 'cubebtndark',
 		'label' => __('3d Button dark', 'greenshift'),
+        'inline_style' => '.is-style-cubebtndark .wp-block-button__link{border:none !important;box-shadow: 0px 2px 4px rgb(45 35 66 / 20%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);text-shadow: 0 1px 0 rgb(0 0 0 / 40%);}.is-style-cubebtndark .wp-block-button__link:hover{transform: translateY(-2px);}.is-style-cubebtndark .wp-block-button__link:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}',
 	)
 );
 
@@ -53,6 +56,7 @@ register_block_style(
 	array(
 		'name'  => 'systemlight',
 		'label' => __('System light', 'greenshift'),
+        'inline_style' => '.is-style-systemlight .wp-block-button__link{box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(0, 0, 0, 0.1); background: #fff !important; color: #000 !important}',
 	)
 );
 register_block_style(
@@ -60,6 +64,7 @@ register_block_style(
 	array(
 		'name'  => 'systemdark',
 		'label' => __('System dark', 'greenshift'),
+        'inline_style' => '.is-style-systemdark .wp-block-button__link{background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 50%), #141414 !important; color: #ffffff !important;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.64), 0px 0px 0px 1px #000000; }',
 	)
 );
 
@@ -340,23 +345,7 @@ function greenshift_theme_conditional_assets($html, $block)
             $blockname = $block['blockName'];
 			if (!empty($block['attrs']['className'])) {
 				if ($blockname == 'core/button') {
-                    if (str_contains($block['attrs']['className'], 'is-style-secondary-button') !== false) {
-						$block_style .= '.wp-block-button.is-style-secondary-button .wp-block-button__link {background: var(--wp--preset--color--button);color: var(--wp--preset--color--textonbutton);}
-						.wp-block-button.is-style-secondary-button .wp-block-button__link:focus,.wp-block-button.is-style-secondary-button .wp-block-button__link:hover {    background: var(--wp--preset--color--textonbutton);color: var(--wp--preset--color--button);}';
-					}
-                    if (str_contains($block['attrs']['className'], 'is-style-cubebtnwhite') !== false) {
-						$block_style .= '.is-style-cubebtnwhite .wp-block-button__link{border:none !important; box-shadow: 0px 2px 4px rgb(45 35 66 / 10%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7}.is-style-cubebtnwhite .wp-block-button__link:hover{transform: translateY(-2px);}.is-style-cubebtnwhite .wp-block-button__link:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}';
-					}
-					else if (str_contains($block['attrs']['className'], 'is-style-cubebtndark') !== false) {
-						$block_style .= '.is-style-cubebtndark .wp-block-button__link{border:none !important;box-shadow: 0px 2px 4px rgb(45 35 66 / 20%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
-							text-shadow: 0 1px 0 rgb(0 0 0 / 40%);}.is-style-cubebtndark .wp-block-button__link:hover{transform: translateY(-2px);}.is-style-cubebtndark .wp-block-button__link:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}';
-					}
-                    else if (str_contains($block['attrs']['className'], 'is-style-systemdark') !== false) {
-						$block_style .= '.is-style-systemdark .wp-block-button__link{background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 50%), #141414 !important; color: #ffffff !important;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.64), 0px 0px 0px 1px #000000; }';
-					}
-                    else if (str_contains($block['attrs']['className'], 'is-style-systemlight') !== false) {
-						$block_style .= '.is-style-systemlight .wp-block-button__link{box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(0, 0, 0, 0.1); background: #fff !important; color: #000 !important}';
-					}
+                    // Button styles now use inline_style in block style registration
 				}
                 else if ($blockname == 'core/list') {
 					if (str_contains($block['attrs']['className'], 'is-style-nounderline') !== false) {
@@ -533,6 +522,11 @@ function greenshift_theme_conditional_assets($html, $block)
                     }else if ($blockname == 'core/site-logo') {
                         if (!empty($block['attrs']['stickyLogoSrc'])){
                             $html = str_replace('src=', 'data-originalsrc="" data-stickysrc="'.esc_url($block['attrs']['stickyLogoSrc']).'" src=', $html);
+                        }
+                        if (!empty($block['attrs']['mobileLogoSrc']) && !empty($block['attrs']['mobileLogoId'])){
+                            // Add mobile-specific logo and hide main logo on mobile
+                            $mobile_logo_img = wp_get_attachment_image($block['attrs']['mobileLogoId'], 'full', false, array('class' => 'mobile-only-logo', 'alt' => get_bloginfo('name')));
+                            $html = str_replace('/>', '/><style>.wp-block-site-logo img:not(.mobile-only-logo){display: block;}.mobile-only-logo{display: none;}@media(max-width:767px){.wp-block-site-logo img:not(.mobile-only-logo){display: none;}.mobile-only-logo{display: block;}}</style>' . $mobile_logo_img . '', $html);
                         }
                     }
                     if ($blockname == 'core/template-part' && !empty($block['attrs']['gsHeaderAlpha'])) {
