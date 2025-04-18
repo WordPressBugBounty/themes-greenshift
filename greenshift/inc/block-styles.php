@@ -17,321 +17,338 @@ if (!function_exists('str_contains')) {
     }
 }
 
-// Add Buttons
-register_block_style(
-	'core/button',
-	array(
-		'name'  => 'sliding-button',
-		'label' => __('Sliding Gradient', 'greenshift'),
-        'inline_style' => '.wp-block-button.is-style-sliding-button .wp-block-button__link {background: var(--wp--preset--gradient--creative-btn);color: var(--wp--preset--color--textonprimary);background-size: 200% 200%;}.wp-block-button.is-style-sliding-button .wp-block-button__link:focus,.wp-block-button.is-style-sliding-button .wp-block-button__link:hover {background-position: 100% 0;background: var(--wp--preset--gradient--creative-btn);color: var(--wp--preset--color--textonprimary);}',
-	)
-);
-register_block_style(
-	'core/button',
-	array(
-		'name'  => 'secondary-button',
-		'label' => __('Secondary button', 'greenshift'),
-        'inline_style' => '.wp-block-button.is-style-secondary-button .wp-block-button__link {background: var(--wp--preset--color--button);color: var(--wp--preset--color--textonbutton);}.wp-block-button.is-style-secondary-button .wp-block-button__link:focus,.wp-block-button.is-style-secondary-button .wp-block-button__link:hover {background: var(--wp--preset--color--textonbutton);color: var(--wp--preset--color--button);}',
-	)
-);
-register_block_style(
-	'core/button',
-	array(
-		'name'  => 'cubebtnwhite',
-		'label' => __('3d Button light', 'greenshift'),
-        'inline_style' => '.is-style-cubebtnwhite .wp-block-button__link{border:none !important; box-shadow: 0px 2px 4px rgb(45 35 66 / 10%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7}.is-style-cubebtnwhite .wp-block-button__link:hover{transform: translateY(-2px);}.is-style-cubebtnwhite .wp-block-button__link:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}',
-	)
-);
-register_block_style(
-	'core/button',
-	array(
-		'name'  => 'cubebtndark',
-		'label' => __('3d Button dark', 'greenshift'),
-        'inline_style' => '.is-style-cubebtndark .wp-block-button__link{border:none !important;box-shadow: 0px 2px 4px rgb(45 35 66 / 20%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);text-shadow: 0 1px 0 rgb(0 0 0 / 40%);}.is-style-cubebtndark .wp-block-button__link:hover{transform: translateY(-2px);}.is-style-cubebtndark .wp-block-button__link:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}',
-	)
-);
-
-register_block_style(
-	'core/button',
-	array(
-		'name'  => 'systemlight',
-		'label' => __('System light', 'greenshift'),
-        'inline_style' => '.is-style-systemlight .wp-block-button__link{box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(0, 0, 0, 0.1); background: #fff !important; color: #000 !important}',
-	)
-);
-register_block_style(
-	'core/button',
-	array(
-		'name'  => 'systemdark',
-		'label' => __('System dark', 'greenshift'),
-        'inline_style' => '.is-style-systemdark .wp-block-button__link{background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 50%), #141414 !important; color: #ffffff !important;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.64), 0px 0px 0px 1px #000000; }',
-	)
-);
-
-register_block_style(
-	'core/list',
-	array(
-		'name'  => 'nounderline',
-		'label' => __('Unstyled view', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/cover',
-	array(
-		'name'  => 'containbg',
-		'label' => __('Full background', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/cover',
-	array(
-		'name'  => 'blurbg',
-		'label' => __('Blur background', 'greenshift'),
-	)
-);
-
-// Add navigation styles: Fill, Outline.
-
-register_block_style(
-	'core/navigation-link',
-	array(
-		'name'  => 'accentbutton',
-		'label' => __('Accent Button', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/navigation-link',
-	array(
-		'name'  => 'primarybtn',
-		'label' => __('Primary Color Button', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/navigation-link',
-	array(
-		'name'  => 'secondarybtn',
-		'label' => __('Secondary Color Button', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/navigation-link',
-	array(
-		'name'  => 'cubeprimarybtn',
-		'label' => __('Primary 3d Button', 'greenshift'),
-	)
-);
-
-register_block_style(
-	'core/group',
-	array(
-		'name'  => 'no-margin',
-		'label' => __('No Margin', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/post-navigation-link',
-	array(
-		'name'  => 'hovershadow',
-		'label' => __('Shadow on hover', 'greenshift'),
-	)
-);
-
-// Add image styles: Margin.
-register_block_style(
-	'core/image',
-	array(
-		'name'  => 'no-margin',
-		'label' => __('No Margin', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/post-featured-image',
-	array(
-		'name'  => 'gs-half-image-offset',
-		'label' => __('Half negative offset', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/post-featured-image',
-	array(
-		'name'  => 'gs-shadowradius',
-		'label' => __('Shadow radius', 'greenshift'),
-	)
-);
-// Add paragraph styles:
-
-register_block_style(
-	'core/paragraph',
-	array(
-		'name'  => 'gradientmask',
-		'label' => __('Gradient mask', 'greenshift'),
-	)
-);
-
-register_block_style(
-	'core/heading',
-	array(
-		'name'  => 'gradientmask',
-		'label' => __('Gradient mask', 'greenshift'),
-	)
-);
 
 
+function greenshift_register_block_styles(){
+    // Add Buttons
+    register_block_style(
+        'core/button',
+        array(
+            'name'  => 'sliding-button',
+            'label' => __('Sliding Gradient', 'greenshift'),
+            'inline_style' => '.wp-block-button.is-style-sliding-button .wp-block-button__link {background: var(--wp--preset--gradient--creative-btn);color: var(--wp--preset--color--textonprimary);background-size: 200% 200%;}.wp-block-button.is-style-sliding-button .wp-block-button__link:focus,.wp-block-button.is-style-sliding-button .wp-block-button__link:hover {background-position: 100% 0;background: var(--wp--preset--gradient--creative-btn);color: var(--wp--preset--color--textonprimary);}',
+        )
+    );
+    register_block_style(
+        'core/button',
+        array(
+            'name'  => 'secondary-button',
+            'label' => __('Secondary button', 'greenshift'),
+            'inline_style' => '.wp-block-button.is-style-secondary-button .wp-block-button__link {background: var(--wp--preset--color--button);color: var(--wp--preset--color--textonbutton);}.wp-block-button.is-style-secondary-button .wp-block-button__link:focus,.wp-block-button.is-style-secondary-button .wp-block-button__link:hover {background: var(--wp--preset--color--textonbutton);color: var(--wp--preset--color--button);}',
+        )
+    );
+    register_block_style(
+        'core/button',
+        array(
+            'name'  => 'cubebtnwhite',
+            'label' => __('3d Button light', 'greenshift'),
+            'inline_style' => '.is-style-cubebtnwhite .wp-block-button__link{border:none !important; box-shadow: 0px 2px 4px rgb(45 35 66 / 10%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7}.is-style-cubebtnwhite .wp-block-button__link:hover{transform: translateY(-2px);}.is-style-cubebtnwhite .wp-block-button__link:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}',
+        )
+    );
+    register_block_style(
+        'core/button',
+        array(
+            'name'  => 'cubebtndark',
+            'label' => __('3d Button dark', 'greenshift'),
+            'inline_style' => '.is-style-cubebtndark .wp-block-button__link{border:none !important;box-shadow: 0px 2px 4px rgb(45 35 66 / 20%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);text-shadow: 0 1px 0 rgb(0 0 0 / 40%);}.is-style-cubebtndark .wp-block-button__link:hover{transform: translateY(-2px);}.is-style-cubebtndark .wp-block-button__link:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}',
+        )
+    );
 
-register_block_style(
-	'core/post-terms',
-	array(
-		'name'  => 'greenshift-tags-color',
-		'label' => __('Colored tags', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/post-terms',
-	array(
-		'name'  => 'gs-tags-rounded',
-		'label' => __('Rounded border', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/post-terms',
-	array(
-		'name'  => 'gs-tags-greybground',
-		'label' => __('Rounded grey', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/post-terms',
-	array(
-		'name'  => 'greenshift-tags-nounder',
-		'label' => __('Underline on hover', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/categories',
-	array(
-		'name'  => 'listcategories',
-		'label' => __('Inline List', 'greenshift'),
-	)
-);
-register_block_style(
-	'woocommerce/product-categories',
-	array(
-		'name'  => 'listcategories',
-		'label' => __('Inline List', 'greenshift'),
-	)
-);
+    register_block_style(
+        'core/button',
+        array(
+            'name'  => 'systemlight',
+            'label' => __('System light', 'greenshift'),
+            'inline_style' => '.is-style-systemlight .wp-block-button__link{box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(0, 0, 0, 0.1); background: #fff !important; color: #000 !important}',
+        )
+    );
+    register_block_style(
+        'core/button',
+        array(
+            'name'  => 'systemdark',
+            'label' => __('System dark', 'greenshift'),
+            'inline_style' => '.is-style-systemdark .wp-block-button__link{background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 50%), #141414 !important; color: #ffffff !important;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.64), 0px 0px 0px 1px #000000; }',
+        )
+    );
 
-register_block_style(
-	'core/search',
-	array(
-		'name'  => 'floating-white-search',
-		'label' => __('Floating search bar on click', 'greenshift'),
-	)
-);
+    register_block_style(
+        'core/list',
+        array(
+            'name'  => 'nounderline',
+            'label' => __('Unstyled view', 'greenshift'),
+            'inline_style' => 'ul.is-style-nounderline {margin:0; padding:0;list-style:none}ul.is-style-nounderline a{text-decoration:none}ul.is-style-nounderline li{list-style:none}',
+        )
+    );
+    register_block_style(
+        'core/cover',
+        array(
+            'name'  => 'containbg',
+            'label' => __('Full background', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/cover',
+        array(
+            'name'  => 'blurbg',
+            'label' => __('Blur background', 'greenshift'),
+        )
+    );
 
-register_block_style(
-	'core/search',
-	array(
-		'name'  => 'header-search',
-		'label' => __('Header search', 'greenshift'),
-	)
-);
+    // Add navigation styles: Fill, Outline.
 
-register_block_style('core/query', [
-	'name' => 'gs-creativeoverlay',
-	'label' => __('Creative overlay', 'greenshift'),
-]);
-register_block_style('core/query', [
-	'name' => 'gs-brdnpaddradius',
-	'label' => __('Rounded border box', 'greenshift'),
-]);
+    register_block_style(
+        'core/navigation-link',
+        array(
+            'name'  => 'accentbutton',
+            'label' => __('Accent Button', 'greenshift'),
+            'inline_style' => '.wp-block-navigation-item.is-style-accentbutton a{background-color:var(--wp--preset--color--button)!important;color:var(--wp--preset--color--textonbutton)!important;padding:5px 15px !important; line-height: 1.8 }',
+        )
+    );
+    register_block_style(
+        'core/navigation-link',
+        array(
+            'name'  => 'primarybtn',
+            'label' => __('Primary Color Button', 'greenshift'),
+            'inline_style' => '.wp-block-navigation-item.is-style-primarybtn a{background-color:var(--wp--preset--color--primary)!important;color:var(--wp--preset--color--textonprimary)!important;padding:5px 15px !important; line-height: 1.8 }',
+        )
+    );
+    register_block_style(
+        'core/navigation-link',
+        array(
+            'name'  => 'secondarybtn',
+            'label' => __('Secondary Color Button', 'greenshift'),
+            'inline_style' => '.wp-block-navigation-item.is-style-secondarybtn a{background-color:var(--wp--preset--color--secondary)!important;color:var(--wp--preset--color--textonprimary)!important;padding:5px 15px !important; line-height: 1.8 }',
+        )
+    );
+    register_block_style(
+        'core/navigation-link',
+        array(
+            'name'  => 'cubeprimarybtn',
+            'label' => __('Primary 3d Button', 'greenshift'),
+            'inline_style' => '.wp-block-navigation-item.is-style-cubeprimarybtn a{background-color:var(--wp--preset--color--primary)!important;color:var(--wp--preset--color--textonprimary)!important;padding:5px 15px !important; line-height: 1.8;border:none !important;box-shadow: 0px 2px 4px rgb(45 35 66 / 20%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);text-shadow: 0 1px 0 rgb(0 0 0 / 40%); border-radius:5px}.wp-block-navigation-item.is-style-cubeprimarybtn a:after{display:none}.wp-block-navigation-item.is-style-cubeprimarybtn a:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}.wp-block-navigation-item.is-style-cubeprimarybtn a:hover{transform: translateY(-2px);}.wp-block-navigation-item.gs-cubebtndark a:hover{transform: translateY(-2px);}',
+        )
+    );
+
+    register_block_style(
+        'core/group',
+        array(
+            'name'  => 'no-margin',
+            'label' => __('No Margin', 'greenshift'),
+            'inline_style' => '.wp-block-group.is-style-no-margin{margin:0 !important}',
+        )
+    );
+    register_block_style(
+        'core/post-navigation-link',
+        array(
+            'name'  => 'hovershadow',
+            'label' => __('Shadow on hover', 'greenshift'),
+            'inline_style' => '.wp-block-post-navigation-link.is-style-hovershadow:before{position: absolute;top: 0;right: 0;left: 0;bottom: 0;transition: box-shadow 0.5s var(--greenshift-transition);content: "";border-radius: 5px;border: 1px solid var(--wp--preset--color--lightborder);}.wp-block-post-navigation-link.is-style-hovershadow:hover:before{box-shadow: 0 3px 40px rgb(188 207 219 / 35%);}.wp-block-post-navigation-link.is-style-hovershadow:empty:before{display:none}.wp-block-post-navigation-link.is-style-hovershadow{padding:20px}.wp-block-post-navigation-link.is-style-hovershadow a{text-decoration:none}',
+        )
+    );
+
+    // Add image styles: Margin.
+    register_block_style(
+        'core/image',
+        array(
+            'name'  => 'no-margin',
+            'label' => __('No Margin', 'greenshift'),
+            'inline_style' => '.wp-block-image.is-style-no-margin{margin:0 !important}',
+        )
+    );
+    register_block_style(
+        'core/post-featured-image',
+        array(
+            'name'  => 'gs-half-image-offset',
+            'label' => __('Half negative offset', 'greenshift'),
+            'inline_style' => '.is-style-gs-half-image-offset::before {content: "";position: absolute;left: 0;bottom: 0;height: 50%;background-color: var(--wp--preset--color--contrastcolor);width:100vw;margin-left: calc(-100vw / 2 + 100% / 2);margin-right: calc(-100vw / 2 + 100% / 2);}.is-style-gs-half-image-offset, .is-style-gs-half-image-offset img{position:relative; margin-top:0; margin-bottom:0}',
+        )
+    );
+    register_block_style(
+        'core/post-featured-image',
+        array(
+            'name'  => 'gs-shadowradius',
+            'label' => __('Shadow radius', 'greenshift'),
+            'inline_style' => '.is-style-gs-shadowradius{box-shadow: 0 0 50px rgb(49 45 161 / 12%);border-radius: 20px;}',
+        )
+    );
+    // Add paragraph styles:
+
+    register_block_style(
+        'core/paragraph',
+        array(
+            'name'  => 'gradientmask',
+            'label' => __('Gradient mask', 'greenshift'),
+            'inline_style' => '.is-style-gradientmask{-webkit-background-clip: text !important;-webkit-text-fill-color: transparent !important;}',
+        )
+    );
+
+    register_block_style(
+        'core/heading',
+        array(
+            'name'  => 'gradientmask',
+            'label' => __('Gradient mask', 'greenshift'),
+            'inline_style' => '.is-style-gradientmask{-webkit-background-clip: text !important;-webkit-text-fill-color: transparent !important;}',
+        )
+    );
 
 
-register_block_style(
-	'core/post-excerpt',
-	array(
-		'name'  => 'text-clamp-two',
-		'label' => __('Show two lines', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/post-excerpt',
-	array(
-		'name'  => 'text-clamp-three',
-		'label' => __('Show three lines', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/post-title',
-	array(
-		'name'  => 'text-clamp-two',
-		'label' => __('Show two lines', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/post-title',
-	array(
-		'name'  => 'text-clamp-three',
-		'label' => __('Show three lines', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/navigation-submenu',
-	array(
-		'name'  => 'mega-menu-right',
-		'label' => __('Mega columned menu', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/navigation-submenu',
-	array(
-		'name'  => 'mega-menu-left',
-		'label' => __('Mega menu Open on left', 'greenshift'),
-	)
-);
-register_block_style(
-	'woocommerce/product-search',
-	array(
-		'name'  => 'theme-search-main',
-		'label' => __('Theme search style', 'greenshift'),
-	)
-);
-register_block_style(
-	'woocommerce/product-search',
-	array(
-		'name'  => 'theme-search-round',
-		'label' => __('Theme search with round corners', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/site-logo',
-	array(
-		'name'  => 'hideontabletdown',
-		'label' => __('Hide on mobile and tablets', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/site-tagline',
-	array(
-		'name'  => 'hideontabletdown',
-		'label' => __('Hide on mobile and tablets', 'greenshift'),
-	)
-);
-register_block_style(
-	'core/site-title',
-	array(
-		'name'  => 'hideontabletdown',
-		'label' => __('Hide on mobile and tablets', 'greenshift'),
-	)
-);
 
-register_block_style(
-	'core/column',
-	array(
-		'name'  => 'softborder',
-		'label' => __('Soft Border radius', 'greenshift'),
-	)
-);
+    register_block_style(
+        'core/post-terms',
+        array(
+            'name'  => 'greenshift-tags-color',
+            'label' => __('Colored tags', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/post-terms',
+        array(
+            'name'  => 'gs-tags-rounded',
+            'label' => __('Rounded border', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/post-terms',
+        array(
+            'name'  => 'gs-tags-greybground',
+            'label' => __('Rounded grey', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/post-terms',
+        array(
+            'name'  => 'greenshift-tags-nounder',
+            'label' => __('Underline on hover', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/categories',
+        array(
+            'name'  => 'listcategories',
+            'label' => __('Inline List', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'woocommerce/product-categories',
+        array(
+            'name'  => 'listcategories',
+            'label' => __('Inline List', 'greenshift'),
+        )
+    );
+
+    register_block_style(
+        'core/search',
+        array(
+            'name'  => 'floating-white-search',
+            'label' => __('Floating search bar on click', 'greenshift'),
+        )
+    );
+
+    register_block_style(
+        'core/search',
+        array(
+            'name'  => 'header-search',
+            'label' => __('Header search', 'greenshift'),
+        )
+    );
+
+    register_block_style('core/query', [
+        'name' => 'gs-creativeoverlay',
+        'label' => __('Creative overlay', 'greenshift'),
+    ]);
+    register_block_style('core/query', [
+        'name' => 'gs-brdnpaddradius',
+        'label' => __('Rounded border box', 'greenshift'),
+    ]);
+
+
+    register_block_style(
+        'core/post-excerpt',
+        array(
+            'name'  => 'text-clamp-two',
+            'label' => __('Show two lines', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/post-excerpt',
+        array(
+            'name'  => 'text-clamp-three',
+            'label' => __('Show three lines', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/post-title',
+        array(
+            'name'  => 'text-clamp-two',
+            'label' => __('Show two lines', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/post-title',
+        array(
+            'name'  => 'text-clamp-three',
+            'label' => __('Show three lines', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/navigation-submenu',
+        array(
+            'name'  => 'mega-menu-right',
+            'label' => __('Mega columned menu', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/navigation-submenu',
+        array(
+            'name'  => 'mega-menu-left',
+            'label' => __('Mega menu Open on left', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'woocommerce/product-search',
+        array(
+            'name'  => 'theme-search-main',
+            'label' => __('Theme search style', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'woocommerce/product-search',
+        array(
+            'name'  => 'theme-search-round',
+            'label' => __('Theme search with round corners', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/site-logo',
+        array(
+            'name'  => 'hideontabletdown',
+            'label' => __('Hide on mobile and tablets', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/site-tagline',
+        array(
+            'name'  => 'hideontabletdown',
+            'label' => __('Hide on mobile and tablets', 'greenshift'),
+        )
+    );
+    register_block_style(
+        'core/site-title',
+        array(
+            'name'  => 'hideontabletdown',
+            'label' => __('Hide on mobile and tablets', 'greenshift'),
+        )
+    );
+
+    register_block_style(
+        'core/column',
+        array(
+            'name'  => 'softborder',
+            'label' => __('Soft Border radius', 'greenshift'),
+        )
+    );
+}
+add_action( 'init', 'greenshift_register_block_styles');
 
 //Include conditional assets
 add_filter('render_block', 'greenshift_theme_conditional_assets', 10, 2);
@@ -348,9 +365,7 @@ function greenshift_theme_conditional_assets($html, $block)
                     // Button styles now use inline_style in block style registration
 				}
                 else if ($blockname == 'core/list') {
-					if (str_contains($block['attrs']['className'], 'is-style-nounderline') !== false) {
-						$block_style .= 'ul.is-style-nounderline {margin:0; padding:0;list-style:none}ul.is-style-nounderline a{text-decoration:none}ul.is-style-nounderline li{list-style:none}';
-					}
+
 				}
                 else if ($blockname == 'core/cover') {
 					if (str_contains($block['attrs']['className'], 'is-style-containbg') !== false) {
@@ -364,18 +379,6 @@ function greenshift_theme_conditional_assets($html, $block)
 					}
 				}
                 else if ($blockname == 'core/navigation-link') {
-					if (str_contains($block['attrs']['className'], 'is-style-accentbutton') !== false) {
-						$block_style .= '.wp-block-navigation-item.is-style-accentbutton a{background-color:var(--wp--preset--color--button)!important;color:var(--wp--preset--color--textonbutton)!important;padding:5px 15px !important; line-height: 1.8 }';
-					}
-					else if (str_contains($block['attrs']['className'], 'is-style-primarybtn') !== false) {
-						$block_style .= '.wp-block-navigation-item.is-style-primarybtn a{background-color:var(--wp--preset--color--primary)!important;color:var(--wp--preset--color--textonprimary)!important;padding:5px 15px !important; line-height: 1.8 }';
-					}
-					else if (str_contains($block['attrs']['className'], 'is-style-cubeprimarybtn') !== false) {
-						$block_style .= '.wp-block-navigation-item.is-style-cubeprimarybtn a{background-color:var(--wp--preset--color--primary)!important;color:var(--wp--preset--color--textonprimary)!important;padding:5px 15px !important; line-height: 1.8;border:none !important;box-shadow: 0px 2px 4px rgb(45 35 66 / 20%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);text-shadow: 0 1px 0 rgb(0 0 0 / 40%); border-radius:5px}.wp-block-navigation-item.is-style-cubeprimarybtn a:after{display:none}.wp-block-navigation-item.is-style-cubeprimarybtn a:active{transform: translateY(2px);box-shadow: 0px 2px 2px rgb(45 35 66 / 15%)}.wp-block-navigation-item.is-style-cubeprimarybtn a:hover{transform: translateY(-2px);}.wp-block-navigation-item.gs-cubebtndark a:hover{transform: translateY(-2px);}';
-					}
-					else if (str_contains($block['attrs']['className'], 'is-style-secondarybtn') !== false) {
-						$block_style .= '.wp-block-navigation-item.is-style-secondarybtn a{background-color:var(--wp--preset--color--secondary)!important;color:var(--wp--preset--color--textonprimary)!important;padding:5px 15px !important; line-height: 1.8 }';
-					}
 					if (str_contains($block['attrs']['className'], 'gs-soft-rounded') !== false) {
 						$block_style .= '.wp-block-navigation-item.gs-soft-rounded a{border-radius:5px}';
 					}
@@ -384,22 +387,7 @@ function greenshift_theme_conditional_assets($html, $block)
 					}
 				}
                 
-                else if ($blockname == 'core/group') {
-					if (str_contains($block['attrs']['className'], 'is-style-no-margin') !== false) {
-						$block_style .= '.is-style-no-margin {margin:0 !important;}';
-					}
-					
-				}else if ($blockname == 'core/post-navigation-link') {
-					if (str_contains($block['attrs']['className'], 'is-style-hovershadow') !== false) {
-						$block_style .= '.wp-block-post-navigation-link.is-style-hovershadow:before{position: absolute;top: 0;right: 0;left: 0;bottom: 0;transition: box-shadow 0.5s var(--greenshift-transition);content: "";border-radius: 5px;border: 1px solid var(--wp--preset--color--lightborder);}.wp-block-post-navigation-link.is-style-hovershadow:hover:before{box-shadow: 0 3px 40px rgb(188 207 219 / 35%);}.wp-block-post-navigation-link.is-style-hovershadow:empty:before{display:none}.wp-block-post-navigation-link.is-style-hovershadow{padding:20px}.wp-block-post-navigation-link.is-style-hovershadow a{text-decoration:none}';
-					}
-				} else if ($blockname == 'core/post-featured-image') {
-					if (str_contains($block['attrs']['className'], 'is-style-gs-half-image-offset') !== false) {
-						$block_style .= '.is-style-gs-half-image-offset::before {content: "";position: absolute;left: 0;bottom: 0;height: 50%;background-color: var(--wp--preset--color--contrastcolor);width:100vw;margin-left: calc(-100vw / 2 + 100% / 2);margin-right: calc(-100vw / 2 + 100% / 2);}.is-style-gs-half-image-offset, .is-style-gs-half-image-offset img{position:relative; margin-top:0; margin-bottom:0}';
-					}
-                    else if (str_contains($block['attrs']['className'], 'is-style-gs-shadowradius') !== false) {
-						$block_style .= '.is-style-gs-shadowradius{box-shadow: 0 0 50px rgb(49 45 161 / 12%);border-radius: 20px;}';
-					}
+                else if ($blockname == 'core/post-featured-image') {
 					if (str_contains($block['attrs']['className'], 'gs-hover-scale-img') !== false) {
 						$block_style .= '.gs-hover-scale-img {overflow:hidden}.gs-hover-scale-img img{transition: transform .6s var(--greenshift-transition);}.gs-hover-scale-img:hover img {transform: scale(1.05);}.gs-hover-scale-img a{display:block}';
 					}
@@ -434,12 +422,7 @@ function greenshift_theme_conditional_assets($html, $block)
 					else if (str_contains($block['attrs']['className'], 'is-style-gs-brdnpaddradius') !== false) {
 						$block_style .= '.is-style-gs-brdnpaddradius > ul > li{border-radius:8px; padding:15px;box-sizing: border-box;border: 1px solid var(--wp--preset--color--lightborder);}.editor-styles-wrapper .is-style-gs-brdnpaddradius figure.wp-block-post-featured-image, .is-style-gs-brdnpaddradius figure.wp-block-post-featured-image{margin:-15px -15px 12px -15px !important;border-radius:8px 8px 0 0}';
 					}
-				} else if ($blockname == 'core/paragraph') {
-                    if (str_contains($block['attrs']['className'], 'is-style-gradientmask') !== false) {
-						$block_style .= '.is-style-gradientmask{-webkit-background-clip: text !important;
-                            -webkit-text-fill-color: transparent !important;}';
-					}
-				}else if ($blockname == 'core/columns') {
+				} else if ($blockname == 'core/columns') {
 					if (str_contains($block['attrs']['className'], 'gs-tablet-collapse') !== false) {
 						$block_style .= '@media only screen and (max-width: 992px){.gs-tablet-collapse{display: flex;flex-direction: column;flex-wrap: wrap;}.gs-tablet-collapse.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column:not(:first-child){margin-left:0}}';
 					}
@@ -455,11 +438,6 @@ function greenshift_theme_conditional_assets($html, $block)
 					}
                     if (str_contains($block['attrs']['className'], 'is-style-softborder') !== false) {
 						$block_style .= '.is-style-softborder{border-radius:12px}';
-					}
-				}else if ($blockname == 'core/heading') {
-					if (str_contains($block['attrs']['className'], 'is-style-gradientmask') !== false) {
-						$block_style .= '.is-style-gradientmask{-webkit-background-clip: text !important;
-                            -webkit-text-fill-color: transparent !important;}';
 					}
 				}else if ($blockname == 'core/search') {
 					if (str_contains($block['attrs']['className'], 'is-style-floating-white-search') !== false) {
