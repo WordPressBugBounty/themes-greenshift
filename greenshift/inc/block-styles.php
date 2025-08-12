@@ -178,7 +178,7 @@ function greenshift_register_block_styles(){
         array(
             'name'  => 'gradientmask',
             'label' => __('Gradient mask', 'greenshift'),
-            'inline_style' => '.is-style-gradientmask{-webkit-background-clip: text !important;-webkit-text-fill-color: transparent !important;}',
+            'inline_style' => 'body .is-style-gradientmask{-webkit-background-clip: text !important;-webkit-text-fill-color: transparent !important;}',
         )
     );
 
@@ -187,7 +187,7 @@ function greenshift_register_block_styles(){
         array(
             'name'  => 'gradientmask',
             'label' => __('Gradient mask', 'greenshift'),
-            'inline_style' => '.is-style-gradientmask{-webkit-background-clip: text !important;-webkit-text-fill-color: transparent !important;}',
+            'inline_style' => 'body .is-style-gradientmask{-webkit-background-clip: text !important;-webkit-text-fill-color: transparent !important;}',
         )
     );
 
@@ -880,6 +880,9 @@ if(!function_exists('greenshift_generate_incss')) {
             .woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea{background:white}
               .woocommerce-MyAccount-content .woocommerce-info{background-color: #fafafa;border:none;box-shadow:none}
               .woocommerce-MyAccount-navigation{float: left; width: 200px}
+              .rtl .woocommerce-MyAccount-navigation {
+                float: right !important;
+                }
               .woocommerce-MyAccount-content {float: right;width: calc(100% - 220px);border: 1px solid #eee;padding: 25px;background: #fafafa; }
               .woocommerce-MyAccount-navigation ul{margin: 0 0 20px 0; overflow: hidden;padding:0}
               .woocommerce-MyAccount-navigation ul li{list-style: none; margin: 0; padding: 10px 0;border-top: 1px solid #eee;}
@@ -993,6 +996,9 @@ if(!function_exists('greenshift_generate_incss')) {
               .woocommerce #payment ul.payment_methods { margin: 0; list-style: none outside; }
               .woocommerce #payment ul.payment_methods:after { content: ""; display: block; clear: both; }
               .woocommerce #payment ul.payment_methods li{ line-height: 1.8em; text-align: left; margin: 0; font-weight: normal; list-style: none;}
+              .rtl .woocommerce #payment ul.payment_methods li {
+                text-align: right;
+              }
               .woocommerce #payment ul.payment_methods li input{ margin: 0 1em 0 0; }
               .woocommerce #payment ul.payment_methods li img{ vertical-align: middle; margin: -2px 10px 0 .5em; position: relative; }
               .woocommerce #payment #place_order { float: right; margin: 0; }
@@ -1233,6 +1239,12 @@ if(!function_exists('greenshift_generate_incss')) {
             .woocommerce-checkout .checkout .col-2 h3#ship-to-different-address {
                 float: left;
                 clear: none
+            }
+
+            .rtl #add_payment_method .checkout .col-2 h3#ship-to-different-address,
+            .rtl .woocommerce-cart .checkout .col-2 h3#ship-to-different-address,
+            .rtl .woocommerce-checkout .checkout .col-2 h3#ship-to-different-address {
+                float: right !important;
             }
             
             #add_payment_method .checkout .col-2 .notes,
